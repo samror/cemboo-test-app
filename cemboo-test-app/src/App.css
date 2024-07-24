@@ -1,0 +1,40 @@
+.header-gradient {
+  background-color: #00000059;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 0, 8) 20%, rgba(0,212,255,0) 100%);
+  }
+}
+
+.highlight-btn::after {
+  background-color: #6CAEE0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(3deg);
+  animation: rotate-background 10s linear infinite;
+  width: 218px;
+  height: 44px;
+  content: "HIGHLIGHTS";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.side-bar-hover-effect:hover * {
+  color: white !important;
+}
+
+.image-scale:hover {
+  z-index: 15 !important;
+}
